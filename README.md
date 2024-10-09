@@ -1,29 +1,44 @@
-# Create T3 App
+# Cloudinary Hackaton
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+## Description
 
-## What's next? How do I make an app with this?
+This is a look alike project of Higher or Lower game. The game is simple, you are shown two images and you have to guess which picture is scarier. The users can also uplad their own images to the game and play with them. There are some game modes like easy, medium and hard. The game is built using Next.js and Cloudinary.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## Tech Stack
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+- Authentication: Clerk
+- Framework: Next.js
+- Styling: Tailwind CSS
+- Image Storage: Cloudinary
+- Database: Azure Cosmos DB
+- Deployment: Vercel
+- Analytics: PostHog
+- Error management: Sentry
+- UI Components: Magic UI and Shadcn/ui
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## Tasks
 
-## Learn More
+- [x] Setup Next.js
+- [x] Setup Tailwind CSS
+- [ ] Setup Clerk
+- [ ] Setup Cloudinary
+- [ ] Setup Azure Cosmos DB
+- [ ] Setup Vercel
+- [ ] Setup PostHog
+- [ ] Setup Sentry
+- [ ] Setup Magic UI
+- [ ] Setup Shadcn/ui
+- [ ] Create Home Page
+- [ ] Create Game Page
+- [ ] Create Upload Page
+- [ ] Create Profile Page
+- [ ] Create Leaderboard Page
+- [ ] Create  
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## Team
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+- [TheCukitoDev](github.com/TheCukitoDev)
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## License
 
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+You can check the license [here](LICENSE)
