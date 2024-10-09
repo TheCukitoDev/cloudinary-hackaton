@@ -30,7 +30,7 @@ export default function RootLayout({
             </SignedIn>
             <SignedOut>
               <SignInButton mode="modal">
-                <button className="w- h-12 bg-slate-950 text-white rounded-md"> Sign in</button>
+                Sign in
               </SignInButton>
             </SignedOut>
           </nav>
