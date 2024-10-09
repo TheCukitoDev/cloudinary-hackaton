@@ -20,11 +20,11 @@ This is a look alike project of Higher or Lower game. The game is simple, you ar
 
 - [x] Setup Next.js
 - [x] Setup Tailwind CSS
-- [ ] Setup Clerk
+- [x] Setup Clerk
+- [x] Setup Vercel
+- [ ] Setup PostHog
 - [ ] Setup Cloudinary
 - [ ] Setup Azure Cosmos DB
-- [ ] Setup Vercel
-- [ ] Setup PostHog
 - [ ] Setup Sentry
 - [ ] Setup Magic UI
 - [ ] Setup Shadcn/ui
