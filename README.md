@@ -22,7 +22,10 @@ This is a look alike project of Higher or Lower game. The game is simple, you ar
 - [x] Setup Tailwind CSS
 - [x] Setup Clerk
 - [x] Setup Vercel
-- [ ] Setup PostHog
+- [X] Setup PostHog
+
+  Para configurar PostHog en Next.js e identificar a los usuarios debes identificarlos justo cuando vayas a poner el capture porque sino, van a ser usuarios anónimos.
+
 - [ ] Setup Cloudinary
 - [ ] Setup Azure Cosmos DB
 - [ ] Setup Sentry
