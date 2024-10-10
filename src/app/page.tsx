@@ -11,8 +11,8 @@ export default async function HomePage() {
 			<h1>Home Page</h1>
 			<Link href="/about">About</Link>
 			<Button
-				userId={user?.id!}
-				userName={user?.fullName as string}
+				userId={user?.id ?? ''}
+				userName={user?.fullName ?? ''}
 				key={user?.id}
 			/>
 		</div>
