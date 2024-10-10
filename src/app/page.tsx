@@ -13,7 +13,7 @@ export default async function HomePage() {
 			<Button
 				userId={user?.id!}
 				userName={user?.fullName as string}
-				key={user.id}
+				key={user?.id}
 			/>
 		</div>
 	)
