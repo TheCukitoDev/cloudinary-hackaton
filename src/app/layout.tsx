@@ -9,6 +9,8 @@ import { type Metadata } from "next";
 
 import { PHProvider } from "@/app/providers"; 
 
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 
 
@@ -39,6 +41,7 @@ export default function RootLayout({
     <html lang="en" className={`${GeistSans.variable} ${jetbrains.className}`}>
       <body>
         <PostHogPageView/>
+        <SpeedInsights/>
         <header className="bg-transparent">
           <SignedIn>
             <UserButton />
