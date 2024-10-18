@@ -16,8 +16,8 @@ jobs:
         echo NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=${{secrets.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}} >> .env
         echo CLERK_SECRET_KEY=${{secrets.CLERK_SECRET_KEY}} >> .env
         echo NEXT_PUBLIC_POSTHOG_KEY=${{secrets.NEXT_PUBLIC_POSTHOG_KEY}} >> .env
-        NEXT_PUBLIC_POSTHOG_HOST=${{secrets.NEXT_PUBLIC_POSTHOG_HOST}} >> .env
-        NEXT_PUBLIC_APP_BASE_URL=${{secrets.NEXT_PUBLIC_APP_BASE_URL}} >> .env
+        echo NEXT_PUBLIC_POSTHOG_HOST=${{secrets.NEXT_PUBLIC_POSTHOG_HOST}} >> .env
+        echo NEXT_PUBLIC_APP_BASE_URL=${{secrets.NEXT_PUBLIC_APP_BASE_URL}} >> .env
     - name: Install dependencies
       run: bun install --no-progress
     - name: Run linter
