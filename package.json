@@ -6,10 +6,15 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "lint": "next lint",
+    "lint:errors": "biome lint --error-on-warnings ./src",
+    "lint:fix": "biome lint ./src",
+    "lint:write": "biome lint --write ./src",
+    "format": "biome format ./src",
+    "format:write": "biome format --write ./src",
     "start": "next start"
   },
   "dependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@clerk/nextjs": "^5.7.5",
     "@sentry/nextjs": "8",
     "@t3-oss/env-nextjs": "^0.10.1",

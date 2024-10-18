@@ -44,7 +44,7 @@ I am going to create a look-alike higher or lower game with the images the users
 + [X] Setup sentry
 + [X] Setup Clerk
 + [X] Setup PostHog
-+ [ ] Setup Biome.js
++ [X] Setup Biome.js
 + [ ] Setup Codecov
 + [ ] Setup Cypress
 + [ ] Setup Azure Content Safety
