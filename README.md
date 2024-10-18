@@ -38,6 +38,29 @@ I am going to create a look-alike higher or lower game with the images the users
 + [ ] User can see the history of the games
 + [ ] User can see the statistics of the games
 
+## Tasks
+
++ [X] Create the project
++ [X] Setup sentry
++ [X] Setup Clerk
++ [X] Setup PostHog
++ [ ] Setup Biome.js
++ [ ] Setup Codecov
++ [ ] Setup Cypress
++ [ ] Setup Azure Content Safety
++ [ ] Setup Azure Computer Vision
++ [ ] Setup Cloudinary
++ [ ] Setup Firebase
++ [ ] Setup Vercel
++ [ ] Setup Github Actions
++ [ ] Create the landing page
++ [ ] Create the upload page
++ [ ] Create the game page
++ [ ] Create the multiplayer page
++ [ ] Create the leaderboard page
++ [ ] Create the history page
++ [ ] Create the statistics page
+
 ## License
 
 You can check out the full license [here](LICENSE)
