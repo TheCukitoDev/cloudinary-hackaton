@@ -1,0 +1,21 @@
+name: Test deploy
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up bun.sh 
+      uses: oven-sh/setup-bun@v2
+      with:
+        bun-version: 1.1.30
+    - name: Copy .env
+      run: echo"SENTRY_AUTH_TOKEN=${{secrets.SENTRY_AUTH_TOKEN}} NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=${{secrets.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}}  CLERK_SECRET_KEY=${{secrets.CLERK_SECRET_KEY}} NEXT_PUBLIC_POSTHOG_KEY=${{secrets.NEXT_PUBLIC_POSTHOG_KEY}} NEXT_PUBLIC_POSTHOG_HOST=${{secrets.NEXT_PUBLIC_POSTHOG_HOST}}" > .env
+    - name: Install dependencies
+      run: bun install --no-progress
+    - name: Run tests
+      run: bun run test --no-progress
+    - name: Run linter
+      run: bun run lint --no-progress
+    - name: Run build
+      run: bun run build --no-progress

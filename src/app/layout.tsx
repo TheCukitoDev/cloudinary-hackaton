@@ -5,7 +5,7 @@ import { JetBrains_Mono } from 'next/font/google'
 
 import dynamic from 'next/dynamic'
 
-import { type Metadata } from "next";
+import type { Metadata } from "next";
 
 import { PHProvider } from "@/app/providers"; 
 
