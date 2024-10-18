@@ -9,8 +9,14 @@ jobs:
       uses: oven-sh/setup-bun@v2
       with:
         bun-version: 1.1.30
-    - name: Copy .env
-      run: echo"SENTRY_AUTH_TOKEN=${{secrets.SENTRY_AUTH_TOKEN}} NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=${{secrets.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}}  CLERK_SECRET_KEY=${{secrets.CLERK_SECRET_KEY}} NEXT_PUBLIC_POSTHOG_KEY=${{secrets.NEXT_PUBLIC_POSTHOG_KEY}} NEXT_PUBLIC_POSTHOG_HOST=${{secrets.NEXT_PUBLIC_POSTHOG_HOST}}" > .env
+    - name: Ceate .env file
+      run: |
+        touch .env
+        echo SENTRY_AUTH_TOKEN=${{secrets.SENTRY_AUTH_TOKEN}} >> .env
+        echo NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=${{secrets.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}} >> .env
+        echo CLERK_SECRET_KEY=${{secrets.CLERK_SECRET_KEY}} >> .env
+        echo NEXT_PUBLIC_POSTHOG_KEY=${{secrets.NEXT_PUBLIC_POSTHOG_KEY}} >> .env
+        NEXT_PUBLIC_POSTHOG_HOST=${{secrets.NEXT_PUBLIC_POSTHOG_HOST}} >> .env
     - name: Install dependencies
       run: bun install --no-progress
     - name: Run tests
