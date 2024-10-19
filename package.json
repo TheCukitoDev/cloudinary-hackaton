@@ -17,6 +17,7 @@
 		"@biomejs/biome": "^1.9.4",
 		"@clerk/nextjs": "^5.7.5",
 		"@hookform/resolvers": "^3.9.0",
+		"@mynaui/icons-react": "^0.3.2",
 		"@nextui-org/accordion": "^2.0.40",
 		"@nextui-org/autocomplete": "^2.1.7",
 		"@nextui-org/avatar": "^2.0.33",
